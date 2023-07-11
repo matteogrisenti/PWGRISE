@@ -1,0 +1,30 @@
+.cover{
+    background-image: linear-gradient(rgba(100,100,100,0.7),rgba(100,100,100,0.7)), url("../Images/sfondoHome.jpg");
+}
+.titolo{
+    font-size: 36px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+}
+
+#labelVolantino{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.button-standard{
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+

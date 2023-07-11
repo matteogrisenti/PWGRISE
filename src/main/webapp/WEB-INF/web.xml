@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+
+    <filter>
+        <filter-name>FilterCheckLogin</filter-name>
+        <filter-class>com.example.pw2.FilterCheckLogin</filter-class>
+        <description>Controlla se l'utente è loggato e lo ridezione alla pagina corretta</description>
+    </filter>
+
+    <filter>
+        <filter-name>FilterAreaPersonale</filter-name>
+        <filter-class>com.example.pw2.FilterAreaPersonale</filter-class>
+        <description>Serve verificare che la sessione sia ancora attiva</description>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterCheckLogin</filter-name>
+        <url-pattern>/login.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>FilterAreaPersonale</filter-name>
+        <url-pattern>/profilo.jsp</url-pattern>
+        <url-pattern>/iscrizioni.jsp</url-pattern>
+        <url-pattern>/eliminaAccount.jsp</url-pattern>
+    </filter-mapping>
+
+</web-app>

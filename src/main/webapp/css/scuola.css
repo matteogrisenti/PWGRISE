@@ -1,0 +1,11 @@
+.cover{
+    background-image: url('../Images/Attivita/Scuola.jpg');
+}
+
+button{
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 0;
+    color: rgb(88, 129, 87);
+    border-radius: 5px;
+}

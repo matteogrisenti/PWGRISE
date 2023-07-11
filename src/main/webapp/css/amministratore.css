@@ -1,0 +1,93 @@
+
+
+.classAmministratore{
+    width: 100%;
+    /*height: 100vh;*/
+    /*background-color: rgb(88, 129, 87);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.classAmministratore span{
+    color: rgb(88, 129, 87);
+}
+
+
+
+.button-standard{
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.5);
+    width: 450px;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.chiudi{
+    margin-top: 20px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+    border: 1px solid rgb(88, 129, 87);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+    color:rgb(88, 129, 87);
+    background: whitesmoke;
+}
+.chiudi:hover{
+    transition: 0s;
+    font-weight: bold;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.2);
+}
+
+.popup{
+    width: 1100px;
+    height: 400px;
+    background: #e9f5db;
+    border-radius: 10px;
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 100px 30px 30px;
+    color: #777;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 9999;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+.popup h2{
+    color: rgb(88, 129, 87);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    color: #333;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+a{
+    color: white;
+}

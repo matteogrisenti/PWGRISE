@@ -1,0 +1,122 @@
+sectionLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /*background-image: linear-gradient(rgba(100,100,100,0.1),rgba(100,100,100,0.1)), url("../Images/ragazzi3Home.jpg");*/
+    background: linear-gradient(135deg, whitesmoke, rgb(189, 252, 197)) center;
+    background-size: cover;
+}
+.riquadro{
+    position: relative;
+    margin: 100px;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+.inputLogin{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid rgb(88, 129, 87);
+}
+.inputLogin label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(88, 129, 87);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputLogin input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+.inputLogin ion-icon{
+    position: absolute;
+    right: 8px;
+    color: rgb(88, 129, 87);
+    font-size: 1.2em;
+    top: 20px;
+}
+.dimenticato{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: rgb(88, 129, 87);
+    display: flex;
+    justify-content: center;
+}
+
+.dimenticato a{
+    color: rgb(88, 129, 87);
+    text-decoration: none;
+    font-weight: 600;
+}
+.dimenticato a:hover{
+    text-decoration: underline;
+}
+
+.button-standard{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.registrazione{
+    font-size: .9em;
+    color: rgb(88, 129, 87);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.registrazione a{
+    text-decoration: none;
+    color: rgb(88, 129, 87);
+    font-weight: 600;
+}
+.registrazione p a:hover{
+    text-decoration: underline;
+}
+
+.mostra-password{
+    width: 100%;
+    height: 20px;
+    font-size: .9em;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: rgb(88, 129, 87);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+

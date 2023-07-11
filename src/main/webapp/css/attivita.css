@@ -1,0 +1,94 @@
+.cover{
+    background-image: linear-gradient(rgba(100,100,100,0.7),rgba(100,100,100,0.7)), url("../Images/Attivita/Attivita.jpg");
+}
+
+#rigaAttivita{
+    width: 100%;
+    display: grid; /* per mettere le carte in orizzontale uso una griglia */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* per accentrare le cards*/
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+
+.card{
+    width: 300px;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    background-size: cover;
+    background-position: center center;
+
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+.noSottolineatura{
+    text-decoration: none;
+}
+
+.cardInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.cardInfoSel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+[attivita = "scuola"]{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 50%);
+}
+
+
+[attivita = "navetta"]{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0c7 100%);
+}
+
+
+[attivita = "mensa"]{
+    background-color: #52b69a;
+    background-image: linear-gradient(160deg, #52b69a 0%, #2AF598 100%);
+}
+
+
+.cardInfoText{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px){ /* CSS che si attiva solo quando lo schermo è più stretto di 400 px */
+    #rigaAttivita{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* per accentrare le cards*/
+    }
+
+    .card{
+        width: 90%;
+    }
+}
+
+@media (hover: none){ /* quando noi usiamo mobile non abbiamo il cursore e quindi la funzione di hover */
+    .cardInfo{
+        opacity: 1;
+    }
+}
+
+
+

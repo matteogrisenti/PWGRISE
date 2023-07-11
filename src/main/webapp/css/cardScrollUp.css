@@ -1,0 +1,128 @@
+#rigaCards{
+    width: 100%;
+    display: grid; /* per mettere le carte in orizzontale uso una griglia */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px 10px;
+    margin: 40px auto 20px;
+}
+
+.cardSU{
+    width: 200px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+[next="true"]{
+    border-left: 4px solid deepskyblue;
+}
+
+.next-tag{
+    background-color: deepskyblue;
+    color: white;
+    width:50px;
+    margin:0;
+    padding:0;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+[new="true"]{
+    border-left: 4px solid lawngreen;
+ }
+
+.new-tag{
+    background-color: lawngreen;
+    color: white;
+    width:50px;
+    margin:0;
+    padding:0;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.imgCard{
+    width: 200px;
+    aspect-ratio: 3 / 4;
+    background-size: cover;
+    background-position: center center;
+}
+
+.covering{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3 / 4;
+}
+
+.covering h2{
+    color: white;
+}
+
+
+.sfondoVerde{
+    background: linear-gradient(to bottom,rgba(0,255,0,0.50),rgba(0,255,0,0.50));
+}
+
+
+.sfondoRed{
+    background: linear-gradient(to bottom,rgba(255,0,0,0.50),rgba(255,0,0,0.50));
+}
+
+
+.sfondoBlu{
+    background: linear-gradient(to bottom,rgba(0,0,255,0.50),rgba(0,0,255,0.50));
+}
+
+
+.sfondoGiallo{
+    background: linear-gradient(to bottom,rgba(255,255,0,0.50),rgba(255,255,0,0.50));
+}
+
+.tendinaCard{
+    width:200px;
+    height: 0;
+    padding-bottom: 2px;
+    border-bottom: 4px solid black;
+    background-color: whitesmoke;
+    visibility: hidden;
+}
+
+
+.cardSU:hover{
+    cursor: pointer;
+}
+
+.cardSU:hover .imgCard{
+    transform: translateY(-100px);
+    transition: transform 1s;
+}
+
+
+.cardSU:not(:hover) .imgCard{
+    transition: transform 1s;
+}
+
+.cardSU:hover .tendinaCard{
+    visibility: visible;
+    padding-bottom: 2px;
+    border-bottom: 4px solid black;
+    height: 100px;
+    transform: translateY(-104px);
+    transition: transform 1s;
+}
+
+.cardSU:not(:hover) .tendinaCard{
+    transition: transform 1s;
+}
+
+.descrizioneCorso{
+    color: black;
+    width: 100%;
+    margin: 0 0 30px;
+    padding:20px;
+}

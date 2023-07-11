@@ -1,0 +1,66 @@
+main{
+    box-sizing: border-box;
+}
+.pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    padding: 30px;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.titolo{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.titolo header{
+    color: rgb(251, 86, 7);
+    font-size: 40px;
+    font-weight: 600;
+}
+.input-donazioni .input-testo{
+    width: 450px;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.5);
+    outline: none;
+    transition: 0.3s;
+}
+::placeholder{
+    font-weight: 500;
+    color: #777;
+}
+.input-donazioni:focus{
+    width: 105%;
+}
+.bottone{
+    position: relative;
+}
+.button-standard{
+    color: rgb(251, 86, 7);
+    border: 1px solid rgb(251, 86, 7);
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.5);
+    width: 450px;
+    height: 60px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.button-standard::before{
+    background: rgb(251, 86, 7);
+}
+
+

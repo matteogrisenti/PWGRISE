@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PW2:war exploded">
+    <output-path>$PROJECT_DIR$/target/out/artifacts/PW2_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PW2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.json:json:20230227" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbyclient:10.14.2.0" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbytools:10.14.2.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.angus:angus-activation:2.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:2.1.1" />
+          <element id="library" level="project" name="Maven: org.eclipse.angus:angus-mail:2.0.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="PW2/web/Web" />
+    </root>
+  </artifact>
+</component>

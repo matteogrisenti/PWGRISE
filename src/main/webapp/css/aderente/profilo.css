@@ -1,0 +1,48 @@
+.box{
+    margin: 100px auto 50px;
+    width: 100%;
+    max-width: 600px;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.attributo{
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+    color: rgb(0, 119, 182);
+}
+
+.valore{
+    flex-grow: 1;
+    color: #777;
+}
+
+.user:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 800px) {
+    .user {
+        flex-direction: column;
+    }
+
+    .attributo, .valore{
+        width: 100%;
+        max-width: none;
+    }
+}
